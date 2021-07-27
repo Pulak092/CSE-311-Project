@@ -1,0 +1,210 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+\begin{figure}
+\quad \quad \quad \quad \quad \quad \quad \quad  \includegraphics[]{NSU_LOGO.png}
+\end{figure}
+\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad North South University
+
+\quad \quad \quad \quad \quad \quad \quad Department of Electrical and Computer Engineering
+
+\quad \quad \quad \quad \quad\quad \quad \quad \quad \quad \quad  Project Proposal
+
+\quad \quad \quad \quad \quad\quad \quad \quad \quad \quad Database Management Lab
+
+\quad \quad \quad \quad \quad\quad \quad \quad \quad \quad \quad \quad \quad  CSE311L
+
+\quad \quad \quad  \quad \quad\quad \quad \quad \quad \quad \quad \quad \quad Section: 01
+
+\quad \quad \quad \quad \quad\quad \quad \quad \quad \quad \quad Semester: SUMMER 2021 \\[5mm]
+
+\quad \quad \quad\quad  \quad \quad \quad`\textbf{''VACCINE REGISTRATION BD''} \\[5mm]
+
+\quad \quad \quad \textbf{Submitted By:}\quad \quad \quad \quad \quad \quad \quad  \textbf{Submitted To:}
+
+\quad \quad \quad Name: Dipto Das \quad \quad \quad \quad \quad \quad Course Faculty: Ahmed Fahmin
+
+\quad \quad \quad ID: 1921216642 \quad \quad \quad \quad \quad\quad \quad  Lab Instructor: Nazmul Alam Dipto
+
+\quad \quad \quad Name: Pulak Saha \quad \quad \quad \quad \quad \quad Submission Date 12-07-2021
+
+\quad \quad \quad ID: 1921200042
+
+
+
+
+
+
+
+
+
+\textbf{Introduction:} Every country in the world has taken some steps
+to deal with this Covid-19 pandemic situation. Bangladesh is not the
+opposite. Like other countries in the world Bangladesh is also being
+vaccinated to control Covid-19. As Bangladesh is a populous country,
+distributing proper vaccine is a new challenge for the Bangladesh
+government. On top of that Bangladesh government has declared lockdown
+situation several times across the country. So manually vaccine
+registration would create a great mess. A proper vaccine registration
+web application is one of best and smartest solution to overcome this
+challenge. For vaccine registration user should provide some personal
+information like Mobile number, NID number, Name, Age, Address. That
+information will help the government to distribute vaccine all over the
+country properly.\\[2mm]
+
+\textbf{Objective:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  User can easily register for a vaccine schedule from home.
+\item
+  User has the privilege to choice his or her preferred date and center.
+\item
+  Through the website user will get to know the vaccine availability.
+\item
+  User will get a unique ID.
+\item
+  After the registration user will get a registration card with a unique
+  ID.
+\item
+  After vaccination everyone will get a vaccination certificate.
+\item
+  User can contact to the support team.\\[2mm]
+\end{enumerate}
+
+\textbf{Target People:} All the adult people are our main user. They
+will provide necessary information in the app for registration and get a
+vaccine schedule. Our majority people are local public so to help them
+we will also provide a user guideline.\\[2mm]
+
+\textbf{Value Proposition:} This website will help the government to
+maintain a proper system of distribution of vaccine all over the
+country. From the user data government can easily monitor how many
+people from which area got vaccinated. Government will also determine
+the demand of vaccine through this. This web application will save time
+of the people and through this people will easily do registration
+without any hassle. If government took decision to do the registration
+work manually it would be very costly and not so efficient. But
+registration through the website will also cost efficient. So overall
+this registration website will be very efficient to face the challenge.\\[7mm]
+
+\textbf{Web Application Feature and description:}
+
+We build our web application from the user's view point. That's why we
+will keep all the features very simple and user friendly. This website
+will help the user to complete registration very easily. It will also
+help the government to monitor the vaccination work all over the
+country. So, we build the website keeping all these things in our mind.
+
+\begin{itemize}
+\item
+  \textbf{Login/Sign up:} If a new user come to our website, he/she
+  would have to sign up first. Then he/she can fill up the farther
+  information to book a seat for vaccination. If the user is already
+  sign upped, then he/she just need to log in with valid id and
+  password. Then he/she can use the other features of the web site.
+\item
+  \textbf{Forms:} For registration the user have to fill up some series
+  of information like NID number, Full Name, Age, Mobile Number, Job,
+  Division, District, Thana, Upozilla/Union. After giving all the
+  information there will be an option for choice of hospital and
+  preferred date to get vaccine.
+\item
+  \textbf{Bilingual Website:} We will make our website in two languages
+  (English and Bangla). When the user will enter in the website, he/she
+  can choose their preferable language system.
+\item
+  \textbf{Registration card:} After the filling the registration form,
+  the website will provide them a vaccine card. In the vaccine card
+  there will be a unique id. The hospital will verify that before giving
+  the vaccine. So people need to go to the hospital with the vaccine
+  card.
+\item
+  \textbf{Vaccination certificate:} After completing vaccination people
+  will get a vaccination certificate from the website.
+\item
+  \textbf{Logo:} we will use a unique logo that's how user will
+  recognize our website easily.
+\item
+  \textbf{Helpline:} In the website there will be an option for help.
+  Using that helpline option user can take help from the experts.
+\end{itemize}
+
+\begin{quote}
+Also, we will provide a user's guideline. It will help everyone to use
+the website very efficiently.\\[2mm]
+\end{quote}
+
+\textbf{Tools and Resources:}
+
+HTML
+
+CSS
+
+MySQL
+
+PHP\\[2mm]
+
+\textbf{Challenges:}
+
+\begin{itemize}
+\item
+  We have to maintain a huge data base.
+\item
+  We have to verify the user data. We will need to check if the data
+  entered are reliable or not.
+\item
+  Provide the website in Bangla.
+\end{itemize}
+
+\end{document}
+
